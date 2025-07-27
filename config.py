@@ -19,15 +19,11 @@ class Config:
     GUARDIAN_API_KEY = os.getenv('GUARDIAN_API_KEY')
     GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
     MONGO_CONNECTION_STRING = os.getenv('MONGO_CONNECTION_STRING')
-    GOOGLE_PROJECT_ID = os.getenv('GOOGLE_PROJECT_ID')
-    GOOGLE_APPLICATION_CREDENTIALS = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 
     # These checks are still important. They will now cause a deploy to fail
     # if you forget to set a variable in the Render dashboard.
     if not GUARDIAN_API_KEY: raise ValueError("FATAL ERROR: GUARDIAN_API_KEY is not set in the environment.")
     if not GEMINI_API_KEY: raise ValueError("FATAL ERROR: GEMINI_API_KEY is not set in the environment.")
     if not MONGO_CONNECTION_STRING: raise ValueError("FATAL ERROR: MONGO_CONNECTION_STRING is not set in the environment.")
-    if not GOOGLE_PROJECT_ID: raise ValueError("FATAL ERROR: GOOGLE_PROJECT_ID is not set in the environment.")
-    if not GOOGLE_APPLICATION_CREDENTIALS: raise ValueError("FATAL ERROR: GOOGLE_APPLICATION_CREDENTIALS is not set in the environment.")
 
 print("Configuration loaded successfully.")
