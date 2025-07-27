@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+ENV/
+env/
+venv.bak/
+
+# Environment variables
+.env
+
+# IDE and editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local data files
+articles.json

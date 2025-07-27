@@ -1,0 +1,7 @@
+Flask
+python-dotenv
+google-generativeai
+requests
+pymongo
+flask-cors
+certifi
