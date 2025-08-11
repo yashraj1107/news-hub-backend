@@ -7,7 +7,7 @@ def trigger_article_generation():
     In a real-world scenario, a cloud service (like Google Cloud Scheduler or a cron job)
     would run this script periodically.
     """
-    api_url = "http://127.0.0.1:5000/api/v1/generate-and-save"
+    api_url = "https://api.news.lurnetreau.com/api/v1/generate-and-save"
     print(f"Sending request to trigger article generation at {api_url}...")
     
     try:
